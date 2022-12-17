@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import { Header, Title, Form, RandomButton, RandomImage, Search, SubmitSearchButton, Img } from './style'
 
-import searchIcon from '../../images/searchIcon.svg'
-import Favicon from '../../images/faviconTwo.png'
+import searchIcon from '../../../images/searchIcon.svg'
+import Favicon from '../../../images/faviconTwo.png'
 
 export default function Navbar(props) {
 
@@ -13,7 +13,7 @@ export default function Navbar(props) {
       <Title href="/">RocktFlix</Title>
 
       <Form onSubmit={props.onSubmit}>
-        <Link to={'/random'}>
+        <Link to={'/randomMovies'}>
           <RandomButton>
             <RandomImage src={Favicon} alt='Aleatorio' />
             <p>Surprenda-me</p>

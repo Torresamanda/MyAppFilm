@@ -4,15 +4,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './global.css';
 
-import Home from './components/PosterMovie/index';
-import Random from './components/Random/index'
+import Home from './components/Movies/PosterMovie/index';
+import RandomMovies from './components/Movies/RandomMovies'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/"  element={<Home />}/>
-      <Route path="/random" element={<Random />}/>
+      <Route path="/randomMovies" element={<RandomMovies />}/>
     </Routes>
   </BrowserRouter>
 );

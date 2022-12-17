@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
-import PosterMovie from "../../components/PosterMovie";
-import Navbar from '../../components/Navbar'
+import PosterMovie from '../../components/Movies/PosterMovie/index';
 
 export default function Home(props) {
-
-    const [searchKey, setSearchKey] = useState('')
 
     return (
         <>

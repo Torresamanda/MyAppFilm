@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import Youtube from 'react-youtube'
 import axios from 'axios'
 
-import { imgURL, APIKey } from '../../config/key'
+import { imgURL, APIKey } from '../../../config/key'
 
-import Favicon from '../../images/faviconTwo.png'
+import Favicon from '../../../images/faviconTwo.png'
 
 import { 
   Container, 

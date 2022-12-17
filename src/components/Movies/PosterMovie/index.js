@@ -1,11 +1,11 @@
-import { APIKey } from '../../config/key'
+import { APIKey } from '../../../config/key'
 
 import React, { useState, useEffect } from 'react'
 import Youtube from 'react-youtube'
 
 import axios from 'axios'
 
-import AllMovie from '../AllMovies/AllMovies'
+import AllMovie from '../AllMovies/index'
 import Navbar from '../Navbar'
 
 import {
