@@ -14,6 +14,10 @@ export const Container = styled.div`
         top: 0;
         bottom: 0;
     }
+
+    .movie {
+        display: block;
+    }
 `
 
 export const Main = styled.div`

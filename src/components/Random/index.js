@@ -20,7 +20,7 @@ import {
   SectionVideo,
   TextNoTrailer} from './style'
 
-export default function Random () {
+const RandomMovie  = () => {
   const MOVIE_API = 'https://api.themoviedb.org/3/'
   const TOP_MOVIE = MOVIE_API + 'movie/top_rated'
 
@@ -131,3 +131,5 @@ export default function Random () {
     </Container>
   )
 }
+
+export default RandomMovie;

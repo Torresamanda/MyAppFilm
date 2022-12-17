@@ -6,31 +6,31 @@ import { Header, Title, Form, RandomButton, RandomImage, Search, SubmitSearchBut
 import searchIcon from '../../images/searchIcon.svg'
 import Favicon from '../../images/faviconTwo.png'
 
-export default function Nevbar(props) {
-    return (
-        <Header>
+export default function Navbar(props) {
 
-        <Title href="/">RocktFlix</Title>
+  return (
+    <Header>
+      <Title href="/">RocktFlix</Title>
 
-        <Form onSubmit={props.onSubmit}>
-          <Link to={'/random'}>
-            <RandomButton>
-              <RandomImage src={Favicon} alt='Aleatorio' />
-              <p>Surprenda-me</p>
-            </RandomButton>
-          </Link>
+      <Form onSubmit={props.onSubmit}>
+        <Link to={'/random'}>
+          <RandomButton>
+            <RandomImage src={Favicon} alt='Aleatorio' />
+            <p>Surprenda-me</p>
+          </RandomButton>
+        </Link>
 
-          <Search
-            type='text'
-            id='search'
-            onInput={props.onInput}
-          />
+        <Search
+          type='text'
+          id='search'
+          onInput={props.onInput}
+        />
 
-          <SubmitSearchButton type='submit'>
-            <Img src={searchIcon} alt="" />
-          </SubmitSearchButton>
-        </Form>
+        <SubmitSearchButton type='submit'>
+          <Img src={searchIcon} alt="" />
+        </SubmitSearchButton>
+      </Form>
 
-      </Header>
-    )
+    </Header>
+  )
 }

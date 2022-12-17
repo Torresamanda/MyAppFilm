@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './global.css';
 
-import Home from './pages/Home/index';
-import Random from './pages/Random/Random'
+import Home from './components/PosterMovie/index';
+import Random from './components/Random/index'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
