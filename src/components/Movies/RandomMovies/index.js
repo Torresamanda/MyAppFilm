@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Youtube from 'react-youtube'
 import axios from 'axios'
 
-import { imgURL, APIKey } from '../../../config/key'
+import { imgURL, APIKey, TOP_MOVIE, MOVIE_API } from '../../../config/key'
 
 import Favicon from '../../../images/faviconTwo.png'
 
@@ -21,8 +21,7 @@ import {
   TextNoTrailer} from './style'
 
 const RandomMovie  = () => {
-  const MOVIE_API = 'https://api.themoviedb.org/3/'
-  const TOP_MOVIE = MOVIE_API + 'movie/top_rated'
+
 
   const randomPages = Math.floor(Math.random() * 200) + 2
 

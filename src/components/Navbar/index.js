@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import { Header, Title, Form, RandomButton, RandomImage, Search, SubmitSearchButton, Img } from './style'
 
-import searchIcon from '../../../images/searchIcon.svg'
-import Favicon from '../../../images/faviconTwo.png'
+import searchIcon from '../../images/searchIcon.svg'
+import Favicon from '../../images/faviconTwo.png'
 
 export default function Navbar(props) {
 

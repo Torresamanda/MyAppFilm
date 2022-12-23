@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './global.css';
 
-import Home from './components/Movies/PosterMovie/index';
+import Home from './pages/Home/index';
 import RandomMovies from './components/Movies/RandomMovies'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

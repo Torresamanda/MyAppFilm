@@ -1,11 +1,11 @@
-import { APIKey } from '../../../config/key'
+import { APIKey, MOVIE_API, SEARCH_API, DISCOVER_API_MOVIE, BACKDROP_PATH } from '../../config/key'
 
 import React, { useState, useEffect } from 'react'
 import Youtube from 'react-youtube'
 
 import axios from 'axios'
 
-import AllMovie from '../AllMovies/index'
+import AllMovie from '../Movies/AllMovies/index'
 import Navbar from '../Navbar'
 
 import {
@@ -15,14 +15,10 @@ import {
   PosterButton,
   PosterContent,
   H1
-} from './style.js'
+} from './style'
 
 
 export default function PosterMovie() {
-  const MOVIE_API = 'https://api.themoviedb.org/3/'
-  const SEARCH_API = MOVIE_API + 'search/movie'
-  const DISCOVER_API = MOVIE_API + 'discover/movie'
-  const BACKDROP_PATH = 'https://image.tmdb.org/t/p/w1280'
 
   const [movies, setMovies] = useState([])
   const [movie, setMovie] = useState({ title: 'Carregando Filmes' })
@@ -41,7 +37,7 @@ export default function PosterMovie() {
     }
 
     const { data } = await axios.get(
-      `${searchKey ? SEARCH_API : DISCOVER_API}`,
+      `${searchKey ? SEARCH_API : DISCOVER_API_MOVIE}`,
       {
         params: {
           api_key: APIKey,

@@ -1,12 +1,12 @@
 import React from "react";
 
-import PosterMovie from '../../components/Movies/PosterMovie/index';
+import Poster from "../../components/Posters";
 
 export default function Home(props) {
 
     return (
         <>
-            <PosterMovie />
+            <Poster />
         </>
     )
 }
