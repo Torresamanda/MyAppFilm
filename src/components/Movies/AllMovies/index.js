@@ -4,7 +4,7 @@ import { imgURL } from  "../../../config/key";
 
 import { ContainerMovie, Title, SectionInfos, MovieVoting, Imagem } from './style'
 
-const AllMovie = ({movie, selectMovie}) => {
+const AllMovie = ({movie, selectMovie, props}) => {
     return (
         <ContainerMovie onClick={() => selectMovie(movie)} className={"movie"}>
             <>
