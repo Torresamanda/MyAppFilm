@@ -19,7 +19,6 @@ import {
 
 
 export default function PosterMovie() {
-
   const [movies, setMovies] = useState([])
   const [movie, setMovie] = useState({ title: 'Carregando Filmes' })
   const [searchKey, setSearchKey] = useState('')
